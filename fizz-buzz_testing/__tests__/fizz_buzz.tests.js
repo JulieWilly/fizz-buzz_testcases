@@ -1,7 +1,6 @@
-const {fizzBuzzNumbers} = require('../main')
+const {fizzBuzzNumbers} = require('../fizzBuzzNumbers')
 
 describe ( "fizzBuzzNumbers", () => {
- 
 
     it ('Returns FizzBuzz for number divisible by both 5 and 3', () =>{
         expect( fizzBuzzNumbers(30)).toBe('FizzBuzz')
@@ -14,7 +13,6 @@ describe ( "fizzBuzzNumbers", () => {
         expect( fizzBuzzNumbers(20)).toBe('Buzz')
         expect( fizzBuzzNumbers(10)).toBe('Buzz')
     })
-    
     
     it ('Returns number for number that is not divisible by 5, 3 and both', () =>{
         expect( fizzBuzzNumbers(13)).toBe(13)
